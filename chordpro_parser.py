@@ -143,7 +143,7 @@ def parse_chordpro(text, mode="lyrics"):
             continue
 
         if line.strip().startswith("#"):
-            blocks.append(Block("comment", line.strip().lstrip("#").strip()))
+            # ChordPro line comment -- discarded, not shown in either output
             continue
 
         if line.strip() == "":
