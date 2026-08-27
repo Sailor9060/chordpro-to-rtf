@@ -13,6 +13,22 @@ The first time you run it, Windows SmartScreen may show
 **"Windows protected your PC"** because the app isn't signed by a
 recognized publisher. Click **More info → Run anyway** to continue.
 
+### Optional: install it properly (Program Files + PATH)
+
+If you'd rather have it live in `C:\Program Files` and be runnable from any
+terminal, download `install_to_program_files.ps1` from the same release and
+put it in the same folder as `ChordProToRTF.exe`. Then, from an
+**elevated** ("Run as administrator") PowerShell window, run:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File "install_to_program_files.ps1"
+```
+
+This moves the exe into `C:\Program Files\Franz Weber Software`, updates
+the Desktop shortcut to point there, adds a matching shortcut inside that
+folder, and adds the folder to your system `PATH` — so after opening a new
+terminal, typing `ChordProToRTF` launches it from anywhere.
+
 ## Using the app
 
 1. **Choose your source file**, either:
