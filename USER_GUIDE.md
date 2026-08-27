@@ -59,8 +59,9 @@ Both files keep:
 - **Title** and subtitle
 - **Section labels** — Verse, Chorus, Bridge, or any custom name you gave a
   section (e.g. `{start_of_verse: Pre-Chorus 1}`), shown in bold
-- **Comments** — `{comment: ...}` / `{ci: ...}` / `{cb: ...}` directives and
-  `#`-prefixed lines, shown in italics
+- **Comments** — `{comment: ...}` / `{ci: ...}` / `{cb: ...}` directives,
+  shown in italics. Lines starting with `#` are ChordPro's own line-comment
+  syntax and are discarded from both files, not shown.
 
 They differ in the body text:
 
